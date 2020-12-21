@@ -20,23 +20,28 @@ export default class Product extends Component {
 								}}
 							>
 								<Link to="/details">
-									<img src={img} alt={title} className="card-img-top" />
+									<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt={title} className="card-img-top" />
 								</Link>
 								<button
-									className="cart-btn"
+									
 									disabled={inCart ? true : false}
 									onClick={() => {
 										value.addToCart(id);
 										value.openModal(id);
 									}}
 								>
+                                    									<img src="https://cdn.pixabay.com/photo/2014/04/02/10/55/plus-304947_960_720.png" style={{width: 50, height: 50}} />
+
 									{inCart ? (
 										<p className="text-capitalize mb-0 small" disabled>
 											{' '}
 											 In Cart
 										</p>
 									) : (
-										<i className="fas fa-cart-plus" />
+										<p className="text-capitalize mb-0 small" disabled>
+											{' '}
+											Not In Cart
+										</p>
 									)}
 								</button>
 							</div>

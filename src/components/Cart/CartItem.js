@@ -7,8 +7,10 @@ export default function CartItem({item, value}) {
   return (
     <div className="row my-2 text-center text-capitalize">
       <div className="col-10 mx-auto col-lg-2">
+       
+       
         <img 
-          src={img} 
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" 
           alt={title}
           style={{width: "5rem", height: "5rem"}} 
           className="img-fluid"

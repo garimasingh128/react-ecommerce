@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import ProductList from './components/ProductList';
 import Details from './components/Details';
@@ -13,7 +14,7 @@ import Modal from './components/Modal';
 class App extends Component {
   render() {
     return (
-      <Fragment>
+      <Fragment style={{backgroundColor: "light-blue"}}>
         <NavBar />
 
         <Switch>
@@ -23,6 +24,7 @@ class App extends Component {
           <Route component={Default} />
         </Switch>
         <Modal />
+        <Footer/>
       </Fragment>
     );
   }

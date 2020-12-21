@@ -9,7 +9,7 @@
 body {
   /* temp dirty */
   /* font-family: 'Oswald', sans-serif !important; */
-  background: var(--mainWhite) !important;
+  background: lightblue !important;
   color: var(--mainDark) !important;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .btn-black:hover {
-  background: var(--mainDark) !important;
+  background: red !important;
   color: var(--mainWhite) !important;
 }
 
